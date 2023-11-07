@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | EtharaF1_Unity_POI</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="shortcut icon" href="TemplateData/logo.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
@@ -44,14 +44,15 @@
         var div = document.createElement('div');
         div.innerHTML = msg;
         warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
-        else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        // if (type == 'error') div.style = 'background: red; padding: 10px;';
+        // else {
+        //   if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+
+        // }
           setTimeout(function() {
             warningBanner.removeChild(div);
             updateBannerVisibility();
           }, 5000);
-        }
         updateBannerVisibility();
       }
 
@@ -89,7 +90,7 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner("Will fortune favor you at the Virtual Villa's wheel game? Spin to win!");
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
